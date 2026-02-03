@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f0ff, #e6e6fa, #d8bfd8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+header {
+    background: linear-gradient(90deg, #9370db, #b19cd9, #dda0dd);
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.4rem;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-section, .info-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+}
+
+h2 {
+    color: #9370db;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6a5acd;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e6e6fa;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #9370db;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-option {
+    text-align: center;
+    cursor: pointer;
+}
+
+.rating-option input {
+    display: none;
+}
+
+.rating-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f0e8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border: 2px solid #e6e6fa;
+}
+
+.rating-option input:checked + .rating-circle {
+    background: #9370db;
+    color: #fff;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #9370db, #b19cd9);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.submit-btn:disabled {
+    opacity: .7;
+    cursor: not-allowed;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9370db, #dda0dd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #f9f7ff;
+    color: #9370db;
+}

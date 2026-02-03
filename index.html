@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Feedback Management System</h1>
+            <p>Your feedback helps us improve</p>
+        </header>
+
+        <div class="content">
+            <div class="form-section">
+                <h2>Submit Feedback</h2>
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div class="rating-container">
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="1" required>
+                                <div class="rating-circle">1</div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="2">
+                                <div class="rating-circle">2</div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="3">
+                                <div class="rating-circle">3</div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="4">
+                                <div class="rating-circle">4</div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="5">
+                                <div class="rating-circle">5</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="submit-btn" type="submit">
+                        <i class="fas fa-paper-plane"></i> Submit Feedback
+                    </button>
+                </form>
+            </div>
+
+            <div class="info-section">
+                <h2>Why Feedback Matters</h2>
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-chart-line"></i></div>
+                    <p>Helps us improve services</p>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-lightbulb"></i></div>
+                    <p>Encourages innovation</p>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-heart"></i></div>
+                    <p>Builds better user experience</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 Feedback Management System
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
